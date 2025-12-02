@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainScreenActivity">
+    tools:context=".MainScreenActivity"
+    android:background="@color/black"
+    >
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/img1"
@@ -15,7 +17,8 @@
         android:contentDescription="@string/password"
         android:layout_marginTop="12sp"
         android:layout_marginStart="24sp"
-        android:src="@drawable/round"/>
+        android:src="@drawable/round"
+        android:background="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +28,7 @@
         android:text="@string/obs"
         android:textColor="@color/white"
         android:textSize="10sp"
-        android:layout_marginStart="22sp"
+        android:layout_marginStart="26sp"
         tools:ignore="SmallSp" />
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -37,7 +40,8 @@
         android:contentDescription="@string/password"
         android:layout_marginTop="12sp"
         android:layout_marginEnd="24sp"
-        android:src="@drawable/round2"/>
+        android:src="@drawable/round2"
+        android:background="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,7 +51,7 @@
         android:text="@string/obs"
         android:textColor="@color/white"
         android:textSize="10sp"
-        android:layout_marginEnd="22sp"
+        android:layout_marginEnd="26sp"
         tools:ignore="SmallSp" />
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -59,7 +63,8 @@
         android:contentDescription="@string/password"
         android:layout_marginTop="28sp"
         android:layout_marginStart="24sp"
-        android:src="@drawable/round3"/>
+        android:src="@drawable/round3"
+        android:background="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +74,7 @@
         android:text="@string/star"
         android:textColor="@color/white"
         android:textSize="10sp"
-        android:layout_marginStart="25.5sp"
+        android:layout_marginStart="30sp"
         tools:ignore="SmallSp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

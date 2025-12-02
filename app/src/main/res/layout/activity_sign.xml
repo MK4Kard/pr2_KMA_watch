@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignActivity">
+    tools:context=".SignActivity"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/title"
@@ -41,12 +42,15 @@
                 android:textSize="10sp"
                 tools:ignore="SmallSp"/>
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="48sp"
                 android:hint="@string/you_example_com"
                 android:inputType="text"
                 android:autofillHints=""
-                android:textSize="11.5sp"/>
+                android:textSize="11.5sp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,16 +59,23 @@
                 android:textSize="10sp"
                 tools:ignore="SmallSp"/>
             <EditText
+                android:id="@+id/pass"
                 android:layout_width="match_parent"
                 android:layout_height="48sp"
                 android:hint="@string/password"
                 android:inputType="text"
                 android:autofillHints=""
-                android:textSize="11.5sp"/>
+                android:textSize="11.5sp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120sp"/>
         </LinearLayout>
     </ScrollView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
