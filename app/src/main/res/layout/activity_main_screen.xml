@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/password"
+        android:layout_marginTop="12sp"
+        android:layout_marginStart="24sp"
+        android:src="@drawable/round"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        android:text="@string/obs"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="22sp"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/password"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="24sp"
+        android:src="@drawable/round2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        android:text="@string/obs"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginEnd="22sp"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        android:contentDescription="@string/password"
+        android:layout_marginTop="28sp"
+        android:layout_marginStart="24sp"
+        android:src="@drawable/round3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img3"
+        android:text="@string/star"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="25.5sp"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

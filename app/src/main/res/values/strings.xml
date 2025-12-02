@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">zd2_KMA</string>
+    <string name="world_cinema">WorldCinema</string>
+    <string name="you_example_com">you@example.com</string>
+    <string name="password">Ваш пароль</string>
+    <string name="e_mail">E-mail</string>
+    <string name="pass">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="obs">Обсуждения</string>
+    <string name="star">Избранное</string>
+</resources>
