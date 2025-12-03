@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.text.SpannableStringBuilder
+import android.text.TextWatcher
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
@@ -22,8 +24,31 @@ class SignActivity : AppCompatActivity() {
         mail.text = SpannableStringBuilder(loadText(this, false))
         pass.text = SpannableStringBuilder(loadText(this, true))
 
-        saveText(this, false, mail.text.toString())
-        saveText(this, true, pass.text.toString())
+        val v = this
+
+        pass.addTextChangedListener (object: TextWatcher
+        {
+            override fun afterTextChanged(s: Editable?){
+            }
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                saveText(v, true, pass.text.toString())
+            }
+        })
+
+        mail.addTextChangedListener (object: TextWatcher
+        {
+            override fun afterTextChanged(s: Editable?){
+            }
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                saveText(v, false, mail.text.toString())
+            }
+        })
 
         btn.setOnClickListener{
             if (mail.text.toString().isNotEmpty() && pass.text.toString().isNotEmpty()){

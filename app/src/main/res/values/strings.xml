@@ -9,6 +9,10 @@
     <string name="obs">Обсуждения</string>
     <string name="star">Избранное</string>
     <string name="talks">Обсуждения</string>
+    <string name="_new">Новое</string>
+    <string name="witcher">Witcher</string>
+    <string name="jessica_jones">Jessica Jones</string>
+    <string name="magicians">Magicians</string>
     <string-array name="series">
         <item>Lucifer</item>
         <item>The Witcher</item>

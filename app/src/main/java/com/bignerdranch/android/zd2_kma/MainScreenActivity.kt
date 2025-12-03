@@ -3,6 +3,7 @@ package com.bignerdranch.android.zd2_kma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageButton
 
 class MainScreenActivity : AppCompatActivity() {
@@ -21,6 +22,11 @@ class MainScreenActivity : AppCompatActivity() {
 
         btn2.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn3.setOnClickListener {
+            val intent = Intent(this, MoviesActivity::class.java)
             startActivity(intent)
         }
     }
